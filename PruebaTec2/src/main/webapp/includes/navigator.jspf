@@ -1,9 +1,7 @@
-
 <%@ page pageEncoding="UTF-8" %>
 <nav class="navbar navbar-expand-lg bg-body-tertiary" >
     <div class="container-fluid" style="background-color: black;">
         <a class="navbar-brand titulo" href="https://ajuntament.barcelona.cat/es/"><img src="images/logo.jpg" alt="logo ayuntamiento" width="180px"/></a>
-        
         <div class="collapse navbar-collapse subtitulo" id="navbarNavAltMarkup">
             <div class="navbar-nav" style="font-size: 130%;">
                 <a class="nav-link link-opacity-10" id="d" href="index.jsp">Home</a>

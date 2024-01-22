@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+// Creación entidades y relación OneToMany mapeado por ciudadano
+
 @Entity
 public class Ciudadano implements Serializable{
     
@@ -23,6 +25,8 @@ public class Ciudadano implements Serializable{
     @OneToMany(mappedBy = "ciudadano", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Turno> turnos = new ArrayList<>();
 
+    // Constructores
+    
     public Ciudadano() {
     }
 
@@ -32,6 +36,8 @@ public class Ciudadano implements Serializable{
         this.dni = dni;
     }
 
+    // Getters y Setters
+    
     public int getId() {
         return id;
     }

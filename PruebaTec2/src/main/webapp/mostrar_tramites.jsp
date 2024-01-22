@@ -6,7 +6,7 @@
 <html>
 <head>
     <%@ include file="includes/header.jspf" %>
-    <title>Turnos</title>
+    <title>Mostrar Trámites</title>
     <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -15,7 +15,6 @@
     <div class="container-fluid text-center border border-dark border-4 formularios">
         <div class="row align-items-center">
             <div class="col">
-                <!-- Formulario para filtrar por estado -->
                 <form action="SvTurno" method="GET" class="text-center">
                     <div class="form-group">
                         <label for="estadoFiltro">Filtrar por Estado:</label>
@@ -27,8 +26,6 @@
                         <button class="btn btn-danger" type="submit">Filtrar</button><br>
                     </div>
                 </form>
-
-                <!-- Mostrar la tabla si existen turnos -->
                 <%
                     List<Turno> turnosFiltrados = (List<Turno>) request.getAttribute("turnosFiltrados");
 

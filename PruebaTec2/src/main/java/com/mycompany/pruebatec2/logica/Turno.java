@@ -9,6 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+// Creación entidades y relación ManyToOne
+
 @Entity
 public class Turno implements Serializable{
     
@@ -23,6 +25,8 @@ public class Turno implements Serializable{
     @ManyToOne
     @JoinColumn(name = "ciudadano_dni", referencedColumnName = "dni")
     private Ciudadano ciudadano;
+    
+    // Constructores
 
     public Turno() {
     }
@@ -34,6 +38,8 @@ public class Turno implements Serializable{
         this.estado = estado;
         this.ciudadano = ciudadano;
     }
+    
+    // Getters y Setters
 
     public int getId() {
         return id;
@@ -87,5 +93,4 @@ public class Turno implements Serializable{
     public String toString() {
         return "Turno{" + "id=" + id + ", fecha=" + fecha + ", numTurno=" + numTurno + ", tramite=" + tramite + ", estado=" + estado + ", ciudadano=" + ciudadano + '}';
     }
-
 }

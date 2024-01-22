@@ -1,4 +1,3 @@
-
 package com.mycompany.pruebatec2.persistence;
 
 import com.mycompany.pruebatec2.logica.Ciudadano;
@@ -7,6 +6,8 @@ import java.util.List;
 import java.util.logging.Logger;
 
 public class ControladoraCiudadano {
+    
+    // CRUD Ciudadano
     
     CiudadanoJpaController ciudadanoJPA = new CiudadanoJpaController();
     
@@ -37,5 +38,4 @@ public class ControladoraCiudadano {
     public Ciudadano traerCiudadanoPorId(int id) {
         return ciudadanoJPA.findCiudadano(id);
     }
-    
 }

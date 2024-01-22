@@ -1,4 +1,3 @@
-
 package com.mycompany.pruebatec2.servlets;
 
 import com.mycompany.pruebatec2.logica.Controladora;
@@ -18,14 +17,12 @@ public class SvTramite extends HttpServlet {
             throws ServletException, IOException {
         
     }
-
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
     }
-
     
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -38,9 +35,7 @@ public class SvTramite extends HttpServlet {
         
         response.sendRedirect("registro_tramite.jsp");
         
-        
     }
-
     
     @Override
     public String getServletInfo() {

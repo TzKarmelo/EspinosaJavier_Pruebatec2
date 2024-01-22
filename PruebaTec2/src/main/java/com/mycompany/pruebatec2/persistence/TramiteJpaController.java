@@ -1,4 +1,3 @@
-
 package com.mycompany.pruebatec2.persistence;
 
 import com.mycompany.pruebatec2.logica.Tramite;
@@ -20,6 +19,8 @@ public class TramiteJpaController implements Serializable {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
+    
+    // Creación de Controlador asociado a la unidad de persistencia
     
     TramiteJpaController() {
         emf = Persistence.createEntityManagerFactory("turnosUP");

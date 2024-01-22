@@ -1,14 +1,13 @@
-
 package com.mycompany.pruebatec2.persistence;
 
 import com.mycompany.pruebatec2.logica.Tramite;
 import com.mycompany.pruebatec2.persistence.exceptions.NonexistentEntityException;
 import java.util.List;
 import java.util.logging.Logger;
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
 
 public class ControladoraTramite {
+    
+    // CRUD Trámite
     
     TramiteJpaController tramiteJPA = new TramiteJpaController();
     
@@ -40,7 +39,4 @@ public class ControladoraTramite {
         return tramiteJPA.findTramite(id);
         
     }
-    
-    
-    
 }

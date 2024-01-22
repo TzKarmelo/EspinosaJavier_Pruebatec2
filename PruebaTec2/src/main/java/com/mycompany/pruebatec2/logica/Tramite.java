@@ -7,6 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+// Creación entidades
+
 @Entity
 public class Tramite implements Serializable{
     
@@ -15,6 +17,8 @@ public class Tramite implements Serializable{
     private int id;
     private String tramite;
     private int turno;
+    
+    // Constructores
 
     public Tramite() {
     }
@@ -23,6 +27,8 @@ public class Tramite implements Serializable{
         this.tramite = tramite;
         this.turno = turno;
     }
+    
+    // Getters y Setters
 
     public int getId() {
         return id;
@@ -52,5 +58,4 @@ public class Tramite implements Serializable{
     public String toString() {
         return "Tramite{" + "id=" + id + ", tramite=" + tramite + ", turno=" + turno + '}';
     }
-    
 }

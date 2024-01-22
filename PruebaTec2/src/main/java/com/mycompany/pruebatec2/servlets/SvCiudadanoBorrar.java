@@ -12,20 +12,17 @@ import javax.servlet.http.HttpServletResponse;
 public class SvCiudadanoBorrar extends HttpServlet {
     
     Controladora control = new Controladora();
-
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
     }
-
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
     }
-
     
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -38,7 +35,6 @@ public class SvCiudadanoBorrar extends HttpServlet {
         response.sendRedirect("registro_ciudadano.jsp");
         
     }
-
     
     @Override
     public String getServletInfo() {

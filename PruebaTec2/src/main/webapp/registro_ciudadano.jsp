@@ -1,4 +1,3 @@
-
 <%@page import="com.mycompany.pruebatec2.logica.Ciudadano"%>
 <%@page import="com.mycompany.pruebatec2.logica.Tramite"%>
 <%@page import="java.util.List"%>
@@ -8,27 +7,18 @@
 <html>
     <head>
         <%@include file="includes/header.jspf" %>
-
-
-        <title>Turnos</title>
+        <title>Registro Ciudadanos</title>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
-
-
     </head>
     <body>
-
         <%@include file="includes/navigator.jspf" %>
-
         <%@include file="includes/title.jspf" %>
-
         <div class="container-fluid text-center border border-dark border-4 formularios d-flex align-items-center justify-content-center">
             <div class="row align-items-center">
-
                 <div class="col mx-auto">
                     <form action="SvCiudadano" method="POST" class="text-center">
                         <div class="form-group">
                             <br><h5><b>Registro Nuevo Ciudadano</b></h5><br>
-
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
                                     <label class="form-label align-label" for="nombre">Nombre</label>
@@ -42,20 +32,15 @@
                                     <label class="form-label align-label" for="dni">DNI (8 Digitos y letra)</label>
                                     <input type="text" name="dni" class="form-control" required pattern="[0-9]{8}[A-Za-z]">
                                 </div>
-                            </div>
-
-                            <br><br>
-
+                            </div><br><br>
                             <button class="btn btn-danger" type="submit">Crear Ciudadano</button>
                         </div><br><br><br>
                     </form>
                 </div>
-
                 <div class="col mx-auto" style="padding-left: 150px;">
                     <form action="SvCiudadanoMod" method="POST" class="text-center">
                         <div class="form-group">
                             <br><h5><b>Modificar Ciudadano</b></h5><br>
-
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
                                     <label class="form-label align-label" for="id">Ciudadano a modificar</label>
@@ -65,7 +50,6 @@
                                             List<Ciudadano> ciudadanos = control.traerCiudadanos();
 
                                             for (Ciudadano ciudadano : ciudadanos) {
-
                                         %>
                                         <option value="<%=ciudadano.getId()%>"><%=ciudadano.getDni()%></option>
                                         <% } %>
@@ -83,20 +67,15 @@
                                     <label class="form-label align-label" for="dni">Nuevo DNI (8 Digitos y letra)</label>
                                     <input type="text" name="dni" class="form-control" required pattern="[0-9]{8}[A-Za-z]">
                                 </div>
-                            </div>
-
-                            <br>
-
+                            </div><br>
                             <button class="btn btn-danger" type="submit">Modificar Ciudadano</button>
                         </div><br>
                     </form>
                 </div>
-
                 <div class="col mx-auto" style="padding-left: 150px;">
                     <form action="SvCiudadanoBorrar" method="POST" class="text-center">
                         <div class="form-group">
                             <br><h5><b>Eliminar Ciudadano</b></h5><br>
-
                             <div class="form-row">
                                 <div class="col-md-12 mb-3">
                                     <label class="form-label align-label" for="id">Ciudadano a eliminar</label>

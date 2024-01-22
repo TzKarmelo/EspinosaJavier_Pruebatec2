@@ -6,9 +6,10 @@ import com.mycompany.pruebatec2.persistence.ControladoraTurno;
 import java.time.LocalDate;
 import java.util.Comparator;
 import java.util.List;
-import javax.persistence.metamodel.SingularAttribute;
 
 public class Controladora {
+    
+    // CRUDS
     
     ControladoraCiudadano controlCiu = new ControladoraCiudadano();
     ControladoraTurno controlTurno = new ControladoraTurno();
@@ -39,7 +40,6 @@ public class Controladora {
         
         controlCiu.editarCiudadano(ciudadano);
     }
-    
     
     // Turno
     
@@ -72,13 +72,9 @@ public class Controladora {
         List<Turno> turnos = controlTurno.traerTurnos();
 
         if (!turnos.isEmpty()) {
-            
             turnos.sort(Comparator.comparingInt(Turno::getNumTurno).reversed());
-
-            
             return turnos.get(0).getNumTurno();
         } else {
-            
             return 0;
         }
     }
@@ -86,7 +82,6 @@ public class Controladora {
     public List<Turno> traerTurnosPorEstado(Boolean estado) {
         return controlTurno.traerTurnosPrEstado(estado);
     }
-    
         
     // Tramite
     
@@ -110,9 +105,4 @@ public class Controladora {
         tramiteModificar.setTramite(tramite);
         tramiteModificar.setTurno(turno);
     }
-
-    
-    
-    
-    
 }

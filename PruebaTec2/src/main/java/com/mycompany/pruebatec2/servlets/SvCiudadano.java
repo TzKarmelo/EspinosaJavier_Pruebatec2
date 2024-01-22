@@ -17,14 +17,12 @@ public class SvCiudadano extends HttpServlet {
             throws ServletException, IOException {
         
     }
-
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
     }
-
     
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -39,7 +37,6 @@ public class SvCiudadano extends HttpServlet {
         response.sendRedirect("registro_ciudadano.jsp");
         
     }
-
     
     @Override
     public String getServletInfo() {

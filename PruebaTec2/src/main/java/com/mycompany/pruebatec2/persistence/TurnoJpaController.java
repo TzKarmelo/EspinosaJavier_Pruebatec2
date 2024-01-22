@@ -1,4 +1,3 @@
-
 package com.mycompany.pruebatec2.persistence;
 
 import java.io.Serializable;
@@ -20,6 +19,8 @@ public class TurnoJpaController implements Serializable {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
+    
+    // Creación de Controlador asociado a la unidad de persistencia
     
     public TurnoJpaController() {
         emf = Persistence.createEntityManagerFactory("turnosUP");
@@ -161,8 +162,4 @@ public class TurnoJpaController implements Serializable {
             em.close();
         }
     }
-
-   
-
-   
 }

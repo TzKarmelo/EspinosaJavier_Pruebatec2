@@ -3,7 +3,6 @@ package com.mycompany.pruebatec2.servlets;
 import com.mycompany.pruebatec2.logica.Ciudadano;
 import com.mycompany.pruebatec2.logica.Controladora;
 import com.mycompany.pruebatec2.logica.Turno;
-import static com.mycompany.pruebatec2.logica.Turno_.estado;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;

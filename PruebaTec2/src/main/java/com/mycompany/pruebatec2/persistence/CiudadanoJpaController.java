@@ -1,4 +1,3 @@
-
 package com.mycompany.pruebatec2.persistence;
 
 import com.mycompany.pruebatec2.logica.Ciudadano;
@@ -21,6 +20,8 @@ public class CiudadanoJpaController implements Serializable {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
+    
+    // Creación de Controlador asociado a la unidad de persistencia
     
     public CiudadanoJpaController() {
         emf = Persistence.createEntityManagerFactory("turnosUP");
@@ -183,5 +184,4 @@ public class CiudadanoJpaController implements Serializable {
             em.close();
         }
     }
-    
 }
