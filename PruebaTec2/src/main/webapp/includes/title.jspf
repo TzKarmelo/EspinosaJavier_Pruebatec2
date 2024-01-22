@@ -1,0 +1,18 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="container-fluid text-center titulo">
+    <div class="row">
+        <div class="col">
+            <h1>App Trámites Ayuntamiento <b>BCN</b></h1>
+        </div>                
+    </div>
+</div>
+
+<div class="container-fluid text-center subtitulo">
+    <div class="row align-items-center">
+
+        <div class="col">                    
+            <h4><b>El Registro General es el instrumento del Ayuntamiento de Barcelona para controlar el flujo de comunicación entre esta administración y la ciudadanía y otras organizaciones. Su finalidad es preservar los derechos de la ciudadanía y también los de la Administración.</b></h4>                    
+        </div>
+    </div>
+</div>
