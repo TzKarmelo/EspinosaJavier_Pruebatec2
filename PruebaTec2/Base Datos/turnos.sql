@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 22-01-2024 a las 03:48:21
+-- Tiempo de generación: 22-01-2024 a las 15:21:18
 -- Versión del servidor: 8.2.0
 -- Versión de PHP: 8.2.13
 
@@ -86,20 +86,22 @@ CREATE TABLE IF NOT EXISTS `turno` (
   `TRAMITE` varchar(255) COLLATE utf8mb4_spanish_ci DEFAULT NULL,
   `ciudadano_dni` varchar(255) COLLATE utf8mb4_spanish_ci DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `turno`
 --
 
 INSERT INTO `turno` (`ID`, `ESTADO`, `FECHA`, `NUMTURNO`, `TRAMITE`, `ciudadano_dni`) VALUES
-(8, 1, '2024-01-25', 2, 'Obras', '456798123a'),
-(7, 1, '2024-01-31', 1, 'Empadronamiento', '36527361A'),
-(9, 0, '2024-01-31', 3, 'Empadronamiento', '36527361A'),
-(10, 1, '2024-01-26', 4, 'Obras', '456798123a'),
-(11, 0, '2024-01-24', 5, 'Multas', '12345678A'),
-(12, 1, '2024-01-22', 6, 'Empadronamiento', '46455788Y'),
-(13, 1, '2024-02-08', 7, 'Impuestos', '46455788Y');
+(19, 1, '2024-03-28', 6, 'Impuestos', '36527361A'),
+(18, 1, '2024-02-28', 5, 'Obras', '12345678A'),
+(17, 0, '2024-01-30', 4, 'Licencias', '36527361A'),
+(16, 0, '2024-02-28', 3, 'Multas', '12345678A'),
+(15, 1, '2024-02-29', 2, 'Multas', '36527361A'),
+(14, 1, '2024-01-25', 1, 'Empadronamiento', '12345678B'),
+(20, 0, '2024-01-31', 7, 'Multas', '36527361A'),
+(21, 0, '2024-03-21', 8, 'Impuestos', '12345678B'),
+(22, 1, '2024-02-10', 9, 'Licencias', '36527361A');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
